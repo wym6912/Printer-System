@@ -1,5 +1,6 @@
 # Printer-System
 
+![img](/demo.png)
 a live code printing system for large acm live contest printing jobs.
 
 ### 1. Installations
