@@ -1,0 +1,97 @@
+<html lang="en" xml:lang="en"><head>
+<meta charset="utf-8">
+<title>打印代码</title>
+<link rel="icon" href="favicon.ico" type="image/png">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+<style>
+body {
+  padding-top: 4.5rem;
+}
+main {
+  padding: 1rem 3rem;
+}
+.nav-item {
+  padding-left: 1em;
+}
+h1,h2,h3,h4,h5,h6 {
+  text-align: center;
+}
+h1 { font-size: 2em;
+  padding-top: 3rem;
+}
+h2 { font-size: 1.5em; }
+h3 { font-size: 1.17em; }
+h4 { font-size: 1.12em; }
+h5 { font-size: .83em; }
+h6 { font-size: .75em; }
+.submitform {
+  max-width: 450px;
+}
+.clarificationform {
+  max-width: 800px;
+}
+#submitbut {
+  margin-right: 2rem;
+}
+</style>
+<link rel="stylesheet" href="./css/style.css" type="text/css">
+<link rel="stylesheet" href="./css/octicons/octicons.css">
+<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="./js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./js/domjudge.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a class="navbar-brand hidden-sm-down" href="./">BIT Online Judge</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menuDefault" aria-controls="menuDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="menuDefault">
+        <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+            <a class="nav-link" href="http://acm.bit.edu.cn/team/"><span class="octicon octicon-home"></span> 首页</a>
+          </li>
+      <li class="nav-item">
+            <a class="nav-link" href="http://acm.bit.edu.cn/team/problems.php"><span class="octicon octicon-book"></span> 题目列表</a>
+          </li>
+      <li class="nav-item active">
+            <a class="nav-link" href="http://10.1.139.91/"><span class="octicon octicon-file-text"></span> 打印</a>
+      </li>
+      <li class="nav-item">
+            <a class="nav-link" href="http://acm.bit.edu.cn/team/scoreboard.php"><span class="octicon octicon-list-ordered"></span> 排行榜</a>
+      </li>
+         </ul>
+      </div>
+      <div id="submitbut"><a class="nav-link justify-content-center" href="http://acm.bit.edu.cn/team/submit.php"><button type="button" class="btn btn-success btn-sm"><span class="octicon octicon-cloud-upload"></span> 提交代码</button></a></div>
+
+</div>
+	</nav>
+	
+<main role="main" class="pl-4">
+	<div class="container">
+		<form class="form" action="print.php" method="post" name="form1" target="_self">
+		  <div class="form-group">
+			<label for="maincode">账号：</label>
+			  <div class="col-xs-3" ><input type="text" name="name" class="form-control" id="Team" placeholder="Username"></div>
+		  </div>
+		  <div class="form-group">
+			    <label for="maincode">密码：</label>
+			    <div class="col-xs-3"><input type="password" name="passwd" class="form-control" id="Password" placeholder="Password"></div>
+			  </div>
+		  <div class="form-group">
+		  </div>
+		  <button type="submit" class="btn btn-default">提交打印</button>
+			<p></p>	<p></p>
+			<div class="panel-body">
+			<label for="maincode">代码：</label>
+				<textarea class="form-control" name="content" id="typeSpace" rows="25" cols="80" placeholder="Paste your code in here!"></textarea></div>
+			</div>
+			
+		</form>
+	</div>
+
+</main>
+</body>
+</html>
